@@ -17,5 +17,6 @@ Bundler.require(*Rails.groups)
 module Alexandria
   class Application < Rails::Application
     config.api_only = true
+    config.filter_parameters += [:cover]
   end
 end
